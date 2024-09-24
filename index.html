@@ -28,7 +28,7 @@
         </div>
         <div class="navbar-end mr-10">
           <img src="assets/coin.png" alt="" />
-          <h2 class="font-bold">5000</h2>
+          <h2 id="my_default_balance" class="font-bold">5000</h2>
         </div>
       </div>
       <!-- navbar end from here  -->
@@ -49,9 +49,10 @@
               src="assets/noakhali.png"
               class="max-w-sm rounded-lg shadow-2xl" />
             <div>
-              <div class="flex justify-start">
+              <div class="flex justify-start space-x-2">
                 <img src="assets/coin.png" alt="" />
-                <h2>00 <span>BDT</span></h2>
+                <h2 id="existence_balance">500</h2>
+                <span>BDT</span>
               </div>
               <h1 class="text-2xl font-bold">
                 Donate For Flood At Sylet, Bangladesh
@@ -65,11 +66,14 @@
                 the lives of those in need.
               </p>
               <input
+                id="flood_input_field"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full max-w-xs" />
               <br />
-              <button class="btn btn-accent btn-wide mt-4 rounded-xl w-80">
+              <button
+                id="btn_flood_donate"
+                class="btn btn-accent btn-wide mt-4 rounded-xl w-80">
                 Donate Now
               </button>
             </div>
@@ -121,12 +125,12 @@
                 First Aid For Injured In The Quota Movement
               </h1>
               <p class="py-6">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+                The recent quota movement in Bangladesh have injured a lot of
+                civil people which are under 30 to 20. And so many people are
+                died during the movement. Now they need your economical helps
+                for recovering health injuries and medical treatment according
+                to your financial strength. If You want to help those people
+                then please donate them below.
               </p>
               <input
                 type="text"
@@ -147,5 +151,6 @@
     <!-- Javascript files -->
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
