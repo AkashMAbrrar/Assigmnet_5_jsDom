@@ -17,8 +17,8 @@
       <div class="navbar bg-base-300 fixed z-50 top-0">
         <div class="navbar-start">
           <div class="dropdown">
-            <div class="btn btn-accent ml-10">
-              <a class="" href="">Blogs</a>
+            <div class="btn btn-accent ml-10 p-5">
+              <a id="blogs_btn" class="" href="">Blogs</a>
             </div>
           </div>
         </div>
@@ -36,12 +36,15 @@
     <main>
       <!-- Donation Cards -->
       <div class="flex justify-center mt-32 space-x-3">
-        <button class="btn btn-accent">Donation</button>
-        <button class="btn">History</button>
+        <button id="donation_section_show" class="btn btn-accent">
+          Donation
+        </button>
+        <button id="history_section_show" class="btn">History</button>
       </div>
+      <div class="divider container mx-auto"></div>
       <!--  donation cards starts from here -->
 
-      <section class="mt-12 space-y-5">
+      <section id="donation_department" class="mt-12 space-y-5">
         <!-- card -1  -->
         <div class="hero bg-base-200 max-w-5xl mx-auto rounded-xl">
           <div class="hero-content flex-col lg:flex-row">
@@ -151,6 +154,64 @@
         </div>
       </section>
       <!--  donation cards end from here -->
+      <!-- history section start from here -->
+      <div id="donation_history" class="hidden">
+        <h2>this is transaction history</h2>
+        <div id="transaction_container"></div>
+      </div>
+      <!-- history section end from here -->
+      <!-- blogs section start from here -->
+
+      <section id="faq_blogs" class="container mx-auto hidden">
+        <div class="collapse collapse-arrow bg-base-200 space-y-5 mt-5">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- alert modal start -->
+
+      <!-- You can open the modal using ID.showModal() method -->
+      <section id="modal_container">
+        <dialog id="my_modal_3" class="modal">
+          <div class="modal-box">
+            <form method="dialog">
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                ✕
+              </button>
+            </form>
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+          </div>
+        </dialog>
+      </section>
+      <!-- alert modal end -->
+
+      <!-- blogs section end from here -->
     </main>
     <footer></footer>
 
