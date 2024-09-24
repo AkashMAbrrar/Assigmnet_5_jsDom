@@ -30,8 +30,8 @@ document
     const div = document.createElement("div");
     div.classList.add("bg-gray-200");
     div.innerHTML = `
-     <h2 class="text-2xl">Donated for sylet:${donateMoney}.tk New Donated Balance:${newDonate}</h2>
-     <p>Date:${date}</p>
+     <h2 class="text-2xl ">Donated for sylet:${donateMoney}.tk New Donated Balance:${newDonate}</h2>
+     <p class="font-bold">Date:${date}</p>
     `;
 
     // p.innerText = `
@@ -39,8 +39,6 @@ document
     // `;
 
     document.getElementById("transaction_container").appendChild(div);
-
-    console.log(newDonate);
   });
 
 // donation for Rangpur
@@ -63,6 +61,17 @@ document
     document.getElementById("my_default_balance").innerText = reduceMoney;
 
     document.getElementById("existence_balance2").innerText = newDonate2;
+
+    // add to history
+    const date = new Date();
+    const section = document.createElement("section");
+    console.log(section);
+    section.classList.add("bg-gray-200");
+    section.innerHTML = `
+     <h2 class="text-2xl ">Donated for Rangpur:${donateMoney2}.tk New Donated Balance:${newDonate2}</h2>
+     <p class="font-bold">Date:${date}</p>
+    `;
+    document.getElementById("transaction_container").appendChild(section);
   });
 
 //   donation for quota movement for Bangladesh
@@ -87,5 +96,16 @@ document
     document.getElementById("my_default_balance").innerText = reduceMoney;
 
     document.getElementById("existence_balance3").innerText = newDonate3;
+
+    // add to history
+    const date = new Date();
+    const section = document.createElement("section");
+    console.log(section);
+    section.classList.add("bg-gray-200");
+    section.innerHTML = `
+     <h2 class="text-2xl ">Donated for Quota:${donateMoney3}.tk New Donated Balance:${newDonate3}</h2>
+     <p class="font-bold">Date:${date}</p>
+    `;
+    document.getElementById("transaction_container").appendChild(section);
     console.log("Hi iam clicked you from quota movement");
   });
